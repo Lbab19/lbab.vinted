@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBab — Boutique Vinted</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="top">
+        <div class="navbar-brand">
+            <span class="brand-dot"></span>
+            <h1>LBab</h1>
+        </div>
+        <nav class="navbar-links">
+            <a href="#home">Accueil</a>
+            <a href="#vinted">Boutique</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="btn-nav">Voir Vinted ↗</a>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobileMenu()">Accueil</a>
+        <a href="#vinted" onclick="closeMobileMenu()">Boutique</a>
+        <a href="#about" onclick="closeMobileMenu()">À propos</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🛍️ Boutique en ligne</div>
+            <h2 class="hero-title">Bienvenue sur<br><span class="highlight">LBab_dz</span></h2>
+            <p class="hero-subtitle">
+                Des articles de qualité à prix réduits.<br>
+                Retrouvez toute ma sélection sur Vinted.
+            </p>
+            <div class="hero-actions">
+                <a href="#vinted" class="btn-primary">Voir les articles</a>
+                <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="btn-secondary">Mon Vinted ↗</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="counter-articles">0</span>
+                    <span class="stat-label">Articles</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" id="counter-avis">0</span>
+                    <span class="stat-label">Avis positifs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">⭐ 5</span>
+                    <span class="stat-label">Note</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="profile-card">
+                <div class="profile-avatar">L</div>
+                <div class="profile-info">
+                    <h3>lbab_dz</h3>
+                    <p>Vendeur Vinted ✓</p>
+                    <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="profile-link">Voir le profil →</a>
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">Mode</span>
+                    <span class="tag">Accessoires</span>
+                    <span class="tag">Vintage</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VINTED SECTION -->
+    <section id="vinted" class="section vinted-section">
+        <div class="section-header">
+            <h2>Ma Boutique <span class="highlight">Vinted</span></h2>
+            <p>Découvrez mes derniers articles disponibles à la vente</p>
+        </div>
+
+        <div class="vinted-banner">
+            <div class="vinted-banner-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Vinted_logo.svg/1200px-Vinted_logo.svg.png" alt="Vinted" class="vinted-logo">
+                <div>
+                    <strong>@lbab_dz</strong>
+                    <p>Retrouvez tous mes articles en direct sur Vinted</p>
+                </div>
+            </div>
+            <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="btn-primary">Voir tous les articles ↗</a>
+        </div>
+
+        <div class="articles-grid">
+
+            <div class="article-card">
+                <div class="article-img-wrapper">
+                    <div class="article-img placeholder-img">🧥</div>
+                    <span class="article-condition">Très bon état</span>
+                </div>
+                <div class="article-info">
+                    <h4>Nike Tech Fleece Hoodie Gris</h4>
+                    <p>Sweats / Hommes — Taille S</p>
+                    <div class="article-footer">
+                        <span class="article-price">45 €</span>
+                        <a href="https://www.vinted.fr/items/8320733030-veste-nike-tech-fleece-hoodie-gris-full-zip-ancienne-generation-taille-s" target="_blank" class="btn-card">Voir ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-img-wrapper">
+                    <div class="article-img placeholder-img">🖤</div>
+                    <span class="article-condition">Très bon état</span>
+                </div>
+                <div class="article-info">
+                    <h4>C.P. Company Hoodie Noir</h4>
+                    <p>Sweats / Hommes — Taille M</p>
+                    <div class="article-footer">
+                        <span class="article-price">36 €</span>
+                        <a href="https://www.vinted.fr/items/8266626700-cp-company-hoodie-noir-a-lunettes-taille-m-tres-bon-etat" target="_blank" class="btn-card">Voir ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-img-wrapper">
+                    <div class="article-img placeholder-img">🧢</div>
+                    <span class="article-condition">Neuf avec étiquette</span>
+                </div>
+                <div class="article-info">
+                    <h4>Bonnet Jack & Jones Beige</h4>
+                    <p>Accessoires — Taille unique</p>
+                    <div class="article-footer">
+                        <span class="article-price">10 €</span>
+                        <a href="https://www.vinted.fr/items/8107690345-bonnet-jack-jones-beige" target="_blank" class="btn-card">Voir ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card article-card-cta">
+                <div class="cta-content">
+                    <span class="cta-icon">🛍️</span>
+                    <h4>Plus d'articles disponibles</h4>
+                    <p>Consultez ma page Vinted pour voir tous mes articles</p>
+                    <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="btn-primary">Voir tout ↗</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+        <div class="about-grid">
+            <div class="about-visual">
+                <div class="about-avatar">L</div>
+                <div class="about-label">lbab_dz</div>
+            </div>
+            <div class="about-content">
+                <h2>À propos de <span class="highlight">moi</span></h2>
+                <p>
+                    Bienvenue sur mon site personnel ! Je suis vendeur sur Vinted sous le nom
+                    <strong>@lbab_dz</strong>. Je propose des articles de qualité à des prix
+                    accessibles : vêtements, accessoires, chaussures et plus encore.
+                </p>
+                <p>
+                    Tous mes articles sont soigneusement vérifiés et décrits honnêtement.
+                    La satisfaction client est ma priorité.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Expédition rapide</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Articles vérifiés</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Prix honnêtes</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Vendeur sérieux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2>Me <span class="highlight">Contacter</span></h2>
+            <p>Pour toute question, n'hésitez pas à me contacter</p>
+        </div>
+        <div class="contact-grid">
+            <a href="https://www.vinted.fr/member/lbab_dz" target="_blank" class="contact-card">
+                <span class="contact-icon">🛍️</span>
+                <h4>Vinted</h4>
+                <p>@lbab_dz</p>
+                <span class="contact-link">Ouvrir ↗</span>
+            </a>
+            <a href="mailto:mahdizouaoui66@gmail.com" class="contact-card">
+                <span class="contact-icon">✉️</span>
+                <h4>Email</h4>
+                <p>mahdizouaoui66@gmail.com</p>
+                <span class="contact-link">Écrire ↗</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-dot"></span>
+                <strong>LBab</strong>
+            </div>
+            <p>© 2026 LBab_dz — Tous droits réservés.</p>
+            <a href="#top" class="back-top">Haut de page ↑</a>
+        </div>
+    </footer>
+
+    <script src="scripte.js"></script>
+</body>
+</html>
